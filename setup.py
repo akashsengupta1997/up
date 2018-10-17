@@ -5,8 +5,10 @@ The setup script for the entire project.
 @author: Christoph Lassner
 """
 from setuptools import setup
-from pip.req import parse_requirements
-
+try: # for pip >= 10
+    from pip._internal.req import parse_requirements
+except ImportError: # for pip <= 9.0.3
+    from pip.req import parse_requirements
 VERSION = '1.0'
 REQS = [str(ir.req) for ir in parse_requirements('requirements.txt',
                                                  session='tmp')]
