@@ -178,7 +178,7 @@ def pmap_from_mats(scoremat,
                    offmat,
                    shape,
                    scale):
-    """Get a probability map from the deepcut representation."""
+    """Get a probability map from the cut representation."""
     result = _np.zeros((shape[0], shape[1], scoremat.shape[2]),
                        dtype='float32')
     for joint_idx in range(14):

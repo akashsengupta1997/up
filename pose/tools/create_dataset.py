@@ -105,7 +105,7 @@ def add_dataset(dset_fp, dset_fromroot, list_ids, up3d_fp,  # pylint: disable=to
         if not (only_missing and out_exists or write_gtjoints_as_lm):
             if human_annotations:
                 landmark_pos = np.load(path.join(up3d_fp, '%05d_joints.npy' % (im_idx)))
-            else:
+            else:  # TODO look here for how to get joint positions from SMPL
                 landmark_pos = get_landmark_positions(path.join(up3d_fp, '%05d_body.pkl' % (im_idx)),
                                                       (cropinfo[1], cropinfo[0]),
                                                       landmarks)

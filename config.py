@@ -5,12 +5,12 @@ import click
 
 
 ############################ EDIT HERE ########################################
-SMPL_FP = path.expanduser("~/smpl")
+SMPL_FP = path.expanduser("/Users/Akash_Sengupta/Documents/not_GitHub/smpl")
 DEEPLAB_BUILD_FP = path.expanduser("~/git/deeplab-public-ver2/build")
 DEEPERCUT_CNN_BUILD_FP = path.expanduser("~/git/deepcut-cnn/build_cluster")
-UP3D_FP = path.expanduser("~/datasets/up-3d")
-SEG_DATA_FP = path.expanduser("~/datasets/seg_prepared")
-POSE_DATA_FP = path.expanduser("~/datasets/pose_prepared")
+UP3D_FP = path.expanduser("/Users/Akash_Sengupta/Documents/Datasets/up-3d")
+SEG_DATA_FP = path.expanduser("/Users/Akash_Sengupta/Documents/Datasets/seg_with_smpl_annotated_joints")
+POSE_DATA_FP = path.expanduser("/Users/Akash_Sengupta/Documents/Datasets/pose_prepared")
 DIRECT3D_DATA_FP = path.expanduser("~/datasets/2dto3d_prepared")
 
 
