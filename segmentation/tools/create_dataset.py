@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-"""Create segmentation datasets from select SMPL fits."""
+"""Create segmentation datasets from select SMPL fits. Also render joints correctly to match segmentation."""
 import os
 import os.path as path
 import sys

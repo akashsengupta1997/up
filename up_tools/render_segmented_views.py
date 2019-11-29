@@ -269,7 +269,7 @@ def sample_shots(  # pylint: disable=too-many-arguments
 
 def render_body_impl(filename,  # pylint: disable=too-many-arguments
                      resolution=None,
-                     num_steps_around_y=1,
+                     num_steps_around_y=1,  # how many rotated views to render
                      quiet=False,
                      use_light=False,
                      factor=1.):
